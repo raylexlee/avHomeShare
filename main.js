@@ -1,11 +1,13 @@
 const {app, BrowserWindow} = require('electron') 
 const url = require('url') 
 const path = require('path')  
-const fs = require('fs');
+const fs = require('fs')
+const indexhtml = require('./create-indexhtml.js');
 
 let win  
 
 function createWindow() { 
+   fs.writeFileSync('index.html', indexhtml)
    win = new BrowserWindow({width: 1280, height: 700}) 
    win.loadURL(url.format ({ 
       pathname: path.join(__dirname, 'index.html'), 
