@@ -10,3 +10,5 @@ The app will create
 3. a 1280x720 desktop window browsing at http://(the local ip)/(the random port)
 See a sample screenshot below:
 ![app screenshot](avHomeShareExampleScreenshot.png)
+See the sample *index.html* of the above sample:
+![indexhtml screenshot](indexhtml.png)
